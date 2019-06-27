@@ -33,6 +33,8 @@ print("D")
 - C
 - D
 
+//Answer is A, C and D
+
 ***
 ## Question 2
 
@@ -55,6 +57,8 @@ switch appInfo {
 - Thanks for looking at myCoolApp!
 - I'm not quite sure what you are looking at
 - It will give a compile-time error
+
+//the answer is: myCoolApp hasn't released yet
 
 ***
 ## Question 3
@@ -80,6 +84,7 @@ default:
 - C
 - D
 
+//answer is D
 ***
 ## Question 4
 
@@ -103,6 +108,8 @@ case "snickers":
 - No default case in the switch statement
 - No print statement right outside the switch statement
 
+//answer is: No default case in the switch statement
+
 ***
 ## Question 5
 
@@ -111,7 +118,15 @@ Given the current weather conditions (rain, sunny, snow), use a switch statement
 ```swift
 let currentWeather = "rain"
 
-// enter code below
+switch currentWeather {
+case "rain":
+print("get an umbrella")
+case "sunny":
+print("enjoy the sun!")
+case "snow":
+print("ITS SNOWING")
+default:
+print("what?")
 ```
 
 ***
@@ -120,10 +135,10 @@ let currentWeather = "rain"
 Given the first name and last name of a Fellow, declare `fullName` variable and use string interpolation to concatenate the Fellow's full name and print to the console e.g The Fellow's full name is John Appleseed
 
 ```swift
-let firstName = "John"
+let firstName = "John "
 let lastName = "Appleseed"
 
 // enter code below
-```
 
+print(firstName + lastName)
 ***
